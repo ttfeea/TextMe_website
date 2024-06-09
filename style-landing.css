@@ -15,6 +15,8 @@ body
     padding: 0;
 }
 
+/* -----------HEADER--------- */
+
 header
 {
     width: 100%;
@@ -36,13 +38,16 @@ header
 
 .logo-link
 {
-    width: 10%;
+    width: 3em;
 }
 
 .logo
 {
     width: 100%;
 }
+
+
+/* ------------NAV---------- */
 
 nav
 {
@@ -58,10 +63,10 @@ nav
     width: fit-content;
     text-decoration: none;
     color: var(--white-base);
-    font-size:15pt;
+    font-size:17pt;
 }
 
 .navig
 {
-    width: max-content;
+    min-width: 3.7em;
 }
