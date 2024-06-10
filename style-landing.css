@@ -93,6 +93,8 @@ main
 }
 
 .hero__p {
+    width: 80%;
+    align-self: flex-end;
     font-size: 12.3pt;
     text-align: right;
 }
@@ -163,21 +165,76 @@ main
     font-weight: 500;
     color: #4c4763;
     margin: 20px 0 0 0;
-    border-radius: 10px;
+    border-radius: 18px;
 }
 
 .opis__button:hover
 {
     background-color: #f3f3f3;
-    border: 1px solid #6c7e9f;
 }
 
 .opis__img
 {
     width: 70%;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 20px 0 ;
 
 }
+
+
+/* ----------POSTS----------- */
+
+.posts
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #eaeaea;
+    color: #6A6388;
+}
+
+.posts > h2 
+{
+    font-size: 20pt;
+    margin: 20px 0 40px 0;
+}
+
+.post
+{
+    width: 76%;
+    background-color: #fafafa;
+    margin: 20px 0;
+    padding: 30px 40px;
+    border-radius: 14px;
+
+}
+
+.post__p
+{
+    padding: 20px 0;
+}
+
+.post__button
+{
+    border: 0;
+    background-color: #6A6388;
+    color: #eaeaea;
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.post__button:hover
+{
+    background-color: #6a6388df;
+    color: #eaeaea;
+}
+
+
+
+
+
+
 
 
 
@@ -224,6 +281,7 @@ main
         font-size: 17pt;
         line-height: 38px;
         text-align: left;
+        align-self: flex-start;
     }
 
     .hero__button
@@ -292,17 +350,43 @@ main
         border-radius: 16px;
     }
 
-    .opis__button
-    {
-
-    }
-
     .opis__img
     {
-        width: 44%;
+        width: 36%;
         position: absolute;
-        top: 130%;
+        top: 39em;
     }
+
+
+
+    /* ---------POSTS---------- */
+
+    .posts > h2
+    {
+        font-size: 28pt;
+    }
+
+    .post__heading
+    {
+        font-size: 21pt;
+    }
+
+    .post__p
+    {
+        font-size: 18pt;
+    }
+
+    .post__button
+    {
+        border: 0;
+        background-color: #6A6388;
+        color: #eaeaea;
+        width: 46%;
+        height: 40px;
+        border-radius: 16px;
+    }
+   
+
 
 
 
