@@ -8,6 +8,7 @@
 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
 }
 
 body
@@ -21,21 +22,13 @@ header
     width: 100%;
     height: 45px;
     background-color: #82799c;
-    margin: 0;
     box-shadow: 0 1px 2px var(--prp-base);
-
-}
-
-.header__container
-{
-    width: 100%;
-    height: 45px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0 6% 0 2%;
-    box-sizing: border-box;
 }
+
 
 .logo-link
 {
@@ -50,10 +43,8 @@ header
 nav
 {
     display: flex;
-    /* justify-content: space-evenly; */
     min-width: max-content;
     padding-right: 2.5%;
-    box-sizing: border-box;
 }
 
 .nav__link
@@ -62,7 +53,13 @@ nav
     text-decoration: none;
     color: var(--white-base);
     font-size:16pt;
+    font-weight: 500;
     margin: 0 4%;
+}
+
+.nav__link:hover
+{
+    color: #f9f9f9;
 }
 
 .navig
@@ -79,7 +76,6 @@ nav
 main
 {
     width: 100%;
-    box-sizing: border-box;
     text-wrap: wrap;
 }
 
@@ -87,8 +83,7 @@ main
     display: flex;
     flex-direction: column;
     background-color: var(--white-base);
-    padding: 24px 20px 0 20px;
-    box-sizing: border-box;
+    padding: 24px 40px 0 20px;
     color: var(--prp-base);
 }
 
@@ -113,7 +108,14 @@ main
     align-self: flex-end;
     border-radius: 20px;
     font-size: 14pt;
+    font-weight: 500;
     margin: 10px 0 0 0;
+}
+
+.hero__button:hover
+{
+    background-color: #726b93;
+    color: #f2f2f2;
 }
 
 .hero__text--login, .hero__login
