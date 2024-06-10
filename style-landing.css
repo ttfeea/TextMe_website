@@ -1,6 +1,7 @@
 :root
 {
-    --white-base: #d7d7d7;
+    --white-base: #eaeaea;
+    --prp-base: #6A6388;
 }
 
 *
@@ -15,13 +16,14 @@ body
     padding: 0;
 }
 
-/* -----------HEADER--------- */
-
 header
 {
     width: 100%;
     height: 45px;
     background-color: #82799c;
+    margin: 0;
+    box-shadow: 0 1px 2px var(--prp-base);
+
 }
 
 .header__container
@@ -30,15 +32,14 @@ header
     height: 45px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 7% 0 2%;
+    justify-content: space-around;
+    padding: 0 6% 0 2%;
     box-sizing: border-box;
-
 }
 
 .logo-link
 {
-    width: 3em;
+    width: 3.4em;
 }
 
 .logo
@@ -46,27 +47,82 @@ header
     width: 100%;
 }
 
-
-/* ------------NAV---------- */
-
 nav
 {
     display: flex;
-    justify-content: space-evenly;
-    gap: 5%;
-    width: min-content;
-
+    /* justify-content: space-evenly; */
+    min-width: max-content;
+    padding-right: 2.5%;
+    box-sizing: border-box;
 }
 
 .nav__link
 {
-    width: fit-content;
+    min-width: max-content;
     text-decoration: none;
     color: var(--white-base);
-    font-size:17pt;
+    font-size:16pt;
+    margin: 0 4%;
 }
 
 .navig
 {
-    min-width: 3.7em;
+    min-width: max-content;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* -----------MAIN---------- */
+
+main
+{
+    width: 100%;
+    box-sizing: border-box;
+    text-wrap: wrap;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-base);
+    padding: 24px 20px 0 20px;
+    box-sizing: border-box;
+    color: var(--prp-base);
+}
+
+.hero__heading {
+    font-size: 24pt;
+    margin-bottom: 5pt;
+}
+
+.hero__p {
+    font-size: 12.3pt;
+    text-align: right;
+}
+
+
+.hero__button
+{
+    background-color: var(--prp-base);
+    border: 0;
+    color: var(--white-base);
+    width: 134pt;
+    height: 34pt;
+    align-self: flex-end;
+    border-radius: 20px;
+    font-size: 14pt;
+    margin: 10px 0 0 0;
+}
+
+.hero__text--login, .hero__login
+{
+    align-self: flex-end;
+    font-size: 9pt;
+    opacity: 0.65;
+}
+
+.hero__img > img {
+    width: 100%;
 }
