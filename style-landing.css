@@ -385,6 +385,16 @@ main
         height: 40px;
         border-radius: 16px;
     }
+
+    /* ------NEWSLETTER------ */
+
+    .newsletter
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #bcb2db;
+    }
    
 
 
