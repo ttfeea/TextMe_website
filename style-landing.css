@@ -83,7 +83,7 @@ main
     display: flex;
     flex-direction: column;
     background-color: var(--white-base);
-    padding: 24px 40px 0 20px;
+    padding: 24px 30px 0 30px;
     color: var(--prp-base);
 }
 
@@ -129,13 +129,65 @@ main
     width: 100%;
 }
 
-@media only screen and (min-width:1100px)
+
+/* --------OPIS--------- */
+
+.opis
+{
+    width: 100%;
+    padding: 10px 30px 0 30px;
+    background-color: #cddbf5;
+    text-align: center;
+    color: #4c4763;
+}
+
+.opis__heading
+{
+    margin: 30px;
+    font-size: 18pt;
+}
+
+.opis__p
+{
+    /* line-height: 30px; */
+    font-size: 16pt;
+}
+
+.opis__button
+{
+    width: 80%;
+    height: 44px;
+    border: 0;
+    background-color: var(--white-base);
+    font-size: 14pt;
+    font-weight: 500;
+    color: #4c4763;
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+}
+
+.opis__button:hover
+{
+    background-color: #f3f3f3;
+    border: 1px solid #6c7e9f;
+}
+
+.opis__img
+{
+    width: 70%;
+    margin: 20px 0 0 0 ;
+
+}
+
+
+
+@media only screen and (min-width:900px)
 {
 
     header
     {
         justify-content: space-between;
-        height: 65px;
+        height: 85px;
     }
 
     .nav__link
@@ -143,75 +195,117 @@ main
         padding: 0 20px;
     }
 
-.logo-link
-{
-    width: 3.8em;
-}
+    .logo-link
+    {
+        width: 3.8em;
+    }
 
-.nav__link
-{
-    font-size:17pt;
-}
+    .nav__link
+    {
+        font-size:19pt;
+    }
 
-/* -----------MAIN---------- */
+    /* -----------HERO---------- */
 
-.hero {
-    display: grid;
-    grid-template-areas: 'heading heading'
-    'par img'
-    'button img' ;
-    background-color: var(--white-base);
-    padding: 24px 40px 0 20px;
-    color: var(--prp-base);
-}
+    .hero {
+        display: flex;
+        background-color: var(--white-base);
+        padding: 10px 40px 20px 44px;
+        color: var(--prp-base);
+    }
 
-.hero__heading {
-    font-size: 24pt;
-    margin-bottom: 5pt;
-    grid: 1 / 1 / 2 / 2;
-}
+    .hero__heading {
+        width: 48%;    
+        font-size: 38pt;
+    }
 
-.hero__p {
-    font-size: 12.3pt;
-    text-align: right;
-    grid-area: par;
-}
+    .hero__p {
+        width: 48%;
+        font-size: 17pt;
+        line-height: 38px;
+        text-align: left;
+    }
+
+    .hero__button
+    {
+        width: 200pt;
+        height: 46pt;
+        align-self: flex-start;
+        border-radius: 20px;
+        font-size: 16pt;
+        margin: 22px 0 0 0;
+    }
+
+    .hero__button:hover
+    {
+        background-color: #726b93;
+        color: #f2f2f2;
+    }
+
+    .hero__text--login, .hero__login
+    {
+        align-self: flex-start;
+        font-size: 11pt;
+        text-indent: 8px;
+        opacity: 0.65;
+    }
+
+    .hero__img > img {
+        width: 52%;
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+
+    /* ---------OPIS--------- */
+
+    .opis
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px 0 30px;
+    }
+
+    .opis__heading
+    {
+        width: 50%;
+        text-align: left;
+        font-size: 28pt;
+        align-self: flex-end;
+        margin: 36px 0 0 0;
+    }
+
+    .opis__p
+    {
+        width: 50%;
+        font-size: 20pt;
+        align-self: flex-end;
+        text-align: left;
+    }
+
+    .opis__button
+    {
+        width: 40%;
+        height: 50px;
+        align-self: flex-end;
+        margin: 20px 10px 30px 0;
+        border-radius: 16px;
+    }
+
+    .opis__button
+    {
+
+    }
+
+    .opis__img
+    {
+        width: 44%;
+        position: absolute;
+        top: 130%;
+    }
 
 
-.hero__button
-{
-    background-color: var(--prp-base);
-    border: 0;
-    color: var(--white-base);
-    width: 134pt;
-    height: 34pt;
-    align-self: flex-end;
-    border-radius: 20px;
-    font-size: 14pt;
-    font-weight: 500;
-    margin: 10px 0 0 0;
-    grid-area: button;
-}
 
-.hero__button:hover
-{
-    background-color: #726b93;
-    color: #f2f2f2;
-}
+    }
 
-.hero__text--login, .hero__login
-{
-    align-self: flex-end;
-    font-size: 9pt;
-    opacity: 0.65;
-    grid-area: button;
-}
 
-.hero__img > img {
-    width: 100%;
-    grid-area: img;
-    align-self: center;
-    grid: 2 / 2 / 5 / 3;
-}
-
-}
